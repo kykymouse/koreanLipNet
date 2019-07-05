@@ -8,10 +8,10 @@
 
 ### 주요 적용 기술 및 구조
 
-- Library : Keras, Tensorflow, OpenCV, DLib
-- Tool : Visual Code, TensorBoard
-- Language : Python
-- Hardware : Web Camera, Desktop(NVIDIA GTX 2080)
+- **Library** : Keras, Tensorflow, OpenCV, DLib
+- **Tool** : Visual Code, TensorBoard
+- **Language** : Python
+- **Hardware** : Web Camera, Desktop(NVIDIA GTX 2080)
 
 
 
