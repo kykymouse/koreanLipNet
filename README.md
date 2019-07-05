@@ -96,7 +96,7 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 2. sudo apt-get install libboost-all-dev
 ```
 
-### ffmpeg 설치
+### - ffmpeg 설치
 ```
 1. sudo apt-get install ffmpeg
 2. sudo apt-get update
@@ -105,7 +105,53 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 ### - final
 ```
 1. pip install -e . 실행
-2. 라이브러리들이 버전이 맞는지 pip list | grep 패키지명 으로 비교해본다
+2. 라이브러리들이 버전이 맞는지 pip list | grep 패키지명 으로 비교
 3. 완료가 되면 빨간 오류 없이 진행된다.
-4. 만약 오류가 뜬다면 해당 패키지를 삭제 후 재설치하면 된다.
+4. 만약 오류가 뜬다면 해당 패키지를 삭제 후 재설치
+```
+# 사용법
+### - clone repository
+```
+git clone https://github.com/rizkiarm/LipNet
+```
+### - directory structure
+바탕화면에 align 폴더를 만든다.
+그리고 각각 training/overlapped_speakers/s{i}/datasets 와 training/overlapped_speakers/datasets에 symbolic link를 건다.
+- 전체 directory structure
+
+![1](https://user-images.githubusercontent.com/32935365/60745074-a522e280-9fb3-11e9-8a2e-fa20ddf00551.PNG)
+
+- training/overlapped_speakers/s{i}/datasets
+
+![2](https://user-images.githubusercontent.com/32935365/60745117-d0a5cd00-9fb3-11e9-8bca-fc2f0c7df938.PNG)
+
+- training/overlapped_speakers/datasets
+
+![3](https://user-images.githubusercontent.com/32935365/60745122-da2f3500-9fb3-11e9-9c3f-ecbe9a517415.PNG)
+
+### - prepare dataset for training
+필요한 준비물은 다음과 같다.
+1. 360 * 288 크기, 초당 25frame의 동영상을 준비한다.
+2. 각 동영상에 해당하는 align 파일을 만든다.
+3. grid.txt에 학습시키는 모든 align 문장이 들어있다.
+
+
+### - align
+align은 각 동영상에 대한 정답파일이다.
+따라서, 동영상1개당 1개의 align파일이 존재해야한다.
+align작성은 각 글자에 해당하는 frame을 적어준다.
+(sil : 묵음, sp : 공백을 의미)
+
+![4](https://user-images.githubusercontent.com/32935365/60745563-dd2b2500-9fb5-11e9-9938-9f9ca74de5c3.png)
+
+# Train
+학습시킬 동영상 폴더를 지정해준다
+```
+python train.py s{i}
+```
+
+# Predict
+학습으로 생성된 가중치 파일과 예측할 동영상을 지정해준다
+```
+python predict.py [path to weight] [path to video]
 ```
