@@ -18,14 +18,17 @@
 # 개발환경 설정
 ### Ubuntu 16.04 LTS, CUDA 8.0, cudNN v5.1, Tensorflow-gpu 1.0.1
 
-### NVIDIA 드라이버 다운로드
+### - NVIDIA 드라이버 다운로드
+```
 1. System Settings -> Software & Updates -> Additional Drivers
 2. Using NVIDA binary version ~ (open source) 클릭
 3. apply changes & MOK 비밀번호 설정
 4. 재부팅 후 secure boot 창이 뜨면 MOK로 들어가서 비밀번호 치고 key 등록 후 부팅
 5. nvidia-smi 및 NVIDIA X Server Settings로 확인
+```
 
-### Anaconda 설치
+### - Anaconda 설치
+```
 1. python 2.7 버전으로 다운로드
 2. bash Anaconda2-2019.03-Linux-x86_64
 3. 계속 yes
@@ -38,8 +41,10 @@ export PATH="/home/kykymouse/anaconda2/bin:$PATH"
 python
 import matplotlib
 되는지 확인
+```
 
-### CUDA Toolkit 설치
+### - CUDA Toolkit 설치
+```
 1. https://developer.nvidia.com/cuda-toolkit-archive 접속 후 각 pc에 맞는 CUDA Toolkit 설치(여기선 CUDA Toolkit 8.0 GA2를 사용, Base Installer 다운)
 2. Linux - x86_64 - Ubuntu - 16.04 - runfile(local)
 3. 다운로드 폴더에서 터미널을 연 후 sudo sh cuda_8.0.61_375.26_linux.run 명령 실행
@@ -64,11 +69,12 @@ Install the CUDA 8.0 Samples?
 export CUDA_HOME=/usr/local/cuda-8.0  
 export PATH=/usr/local/cuda-8.0/bin${PATH:+:${PATH}}  
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}  
-
 6. source ~/.bashrc
 7. nvcc --version으로 설치 되었는지 확인
+```
 
-### cuDNN 설치
+### - cuDNN 설치
+```
 1. https://developer.nvidia.com/cudnn에 접속하여 해당 버전 다운르도(여기선 cuDNN v5.1(Jan 20, 2017) for CUDA 8.0 사용)
 2. 다운 후 압축 풀기
 3. 터미널에서 sudo nautilus 명령으로 관리자 권한으로 탐색기 열기
@@ -76,22 +82,30 @@ export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY
 5. cuda/include 에 있는 파일을 usr/localcuda/include에 복사
 6. cuda/lib64 에 있는 파일을 usr/localcuda/lib64에 복사
 7. sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
+```
 
-### Tensorflow-gpu 설치
+### - Tensorflow-gpu 설치
+```
 1. tensorflow gpu 1.0.1 설치(python 2.7기준)  
 pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.0.1-cp27-none-linux_x86_64.whl
+```
 
-### dlib 설치
+### - dlib 설치
+```
 1. sudo apg-get install cmake
 2. sudo apt-get install libboost-all-dev
+```
 
 ### ffmpeg 설치
+```
 1. sudo apt-get install ffmpeg
 2. sudo apt-get update
+```
 
-
-### final
+### - final
+```
 1. pip install -e . 실행
 2. 라이브러리들이 버전이 맞는지 pip list | grep 패키지명 으로 비교해본다
 3. 완료가 되면 빨간 오류 없이 진행된다.
 4. 만약 오류가 뜬다면 해당 패키지를 삭제 후 재설치하면 된다.
+```
