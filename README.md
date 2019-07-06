@@ -137,7 +137,7 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 # 사용법
 ### - clone repository
 ```
-git clone https://github.com/rizkiarm/LipNet
+git clone https://github.com/kykymouse/koreanLipNet.git
 ```
 ### - directory structure
 바탕화면에 align 폴더를 만든다.
