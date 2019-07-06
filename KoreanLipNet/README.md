@@ -18,6 +18,8 @@
 
 
 ### - 예시 영상
+사진을 클릭하면 영상을 볼 수 있습니다.
+
 [![Watch the video](https://user-images.githubusercontent.com/32935365/60746344-3fd1f000-9fb9-11e9-9e4e-a24461563e6f.PNG)](https://youtu.be/ycvjTZhqAIs)
 
 [![Watch the video](https://user-images.githubusercontent.com/32935365/60746354-4fe9cf80-9fb9-11e9-9c80-c1d700bd21f3.PNG)](https://youtu.be/EvRNIGnaLbY)
