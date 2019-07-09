@@ -18,14 +18,12 @@
 
 
 ### - 예시 영상
-사진을 클릭하면 영상을 볼 수 있습니다.
 
-[![Watch the video](https://user-images.githubusercontent.com/32935365/60746344-3fd1f000-9fb9-11e9-9e4e-a24461563e6f.PNG)](https://youtu.be/ycvjTZhqAIs)
+![a](https://user-images.githubusercontent.com/32935365/60869619-4044e200-a26a-11e9-82d6-e246158d233a.gif)
 
-[![Watch the video](https://user-images.githubusercontent.com/32935365/60746354-4fe9cf80-9fb9-11e9-9c80-c1d700bd21f3.PNG)](https://youtu.be/EvRNIGnaLbY)
+![b](https://user-images.githubusercontent.com/32935365/60869711-71251700-a26a-11e9-8559-70a085a368ac.gif)
 
-[![Watch the video](https://user-images.githubusercontent.com/32935365/60746368-61cb7280-9fb9-11e9-8281-445703cc3154.PNG)](https://youtu.be/CAZAeY2GuVk)
-
+![c](https://user-images.githubusercontent.com/32935365/60869723-797d5200-a26a-11e9-9b0d-7834224d417a.gif)
 
 ### - 기대효과
 * 다양한 플랫폼에서 청각장애인과 원활한 의사소통 기대
