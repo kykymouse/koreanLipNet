@@ -36,7 +36,7 @@
 - **Library** : Keras, Tensorflow, OpenCV, DLib
 - **Tool** : Visual Code, TensorBoard
 - **Language** : Python
-- **Hardware** : Web Camera, Desktop(NVIDIA GTX 2080)
+- **Hardware** : Web Camera, Desktop(NVIDIA GTX 2080ti)
 
 
 
@@ -73,6 +73,9 @@ import matplotlib
 1. https://developer.nvidia.com/cuda-toolkit-archive 접속 후 각 pc에 맞는 CUDA Toolkit 설치(여기선 CUDA Toolkit 8.0 GA2를 사용, Base Installer 다운)
 2. Linux - x86_64 - Ubuntu - 16.04 - runfile(local)
 3. 다운로드 폴더에서 터미널을 연 후 sudo sh cuda_8.0.61_375.26_linux.run 명령 실행
+  - 만약 안된다면
+  $ chmod +x NVIDIA-Linux-x86_64–410.57.run
+  $ sudo ./NVIDIA-Linux-x86_64–410.57.run --no-x-check
 4. 쭉 문서를 읽다가  
 
 Do you accept the previously read EULA?
