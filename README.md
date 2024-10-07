@@ -120,7 +120,7 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 
 ### - dlib 설치
 ```
-1. sudo apg-get install cmake
+1. sudo apt-get install cmake
 2. sudo apt-get install libboost-all-dev
 ```
 
